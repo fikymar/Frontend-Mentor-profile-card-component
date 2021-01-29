@@ -1,0 +1,116 @@
+body {
+  font-size: 1.125rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #2d3248;
+  background-color: #19a2ae;
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-position: -12.5rem -31.25rem, 43.75rem 31.25rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat, no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 24.9375rem) {
+  body {
+    background-position: -43.75rem -43.75rem, 9.375rem 18.75rem;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+h5, h3 > span {
+  color: #6a6f81;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 0.3125rem;
+}
+
+h5 {
+  margin-top: 0.8125rem;
+}
+
+h6 {
+  color: #969696;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 35% 5% 40% 25%;
+      grid-template-rows: 35% 5% 40% 25%;
+  position: absolute;
+  height: 23.3125rem;
+  width: 21.875rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background-image: url(/images/bg-pattern-card.svg);
+}
+
+@media (max-width: 24.9375rem) {
+  .card {
+    width: 90%;
+  }
+}
+
+.card__photo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid white;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.card__whiteBgr {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.card__name {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.card__name > h3 {
+  padding-top: 2rem;
+}
+
+.card__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-top: 0.5px solid #969696;
+}
+/*# sourceMappingURL=style.css.map */

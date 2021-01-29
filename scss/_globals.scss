@@ -1,0 +1,106 @@
+body {
+    font-size: $fontMedium;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: $veryDarkDesaturatedBlue;
+    background-color: $darkCyan;
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-position: -12.5rem -31.25rem, 43.75rem 31.25rem;
+    background-attachment:fixed;
+    background-repeat: no-repeat, no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    @include breakpoint-down(small) {
+        background-position: -43.75rem -43.75rem, 9.375rem 18.75rem;
+    }
+}
+
+h3 {
+    font-weight: 700;
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding:0;
+ 
+}
+
+ 
+
+  h5, h3>span{
+        color: $darkGrayishBlue;
+        font-weight: 400;
+        text-align: center;
+        margin-left: 0.3125rem;
+    }
+
+    h5 {
+        margin-top: 0.8125rem;
+    }
+
+h6 {
+    color: $darkGray;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.card {
+    display: grid;
+  
+    grid-template-columns: 1;
+    grid-template-rows: 35% 5% 40% 25%;
+    position: absolute;
+    height: 23.3125rem;
+    width: 21.875rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 25px;
+    background-image: url(/images/bg-pattern-card.svg);
+
+    @include breakpoint-down(small) {
+        width:90%;
+    }
+
+}
+
+.card__photo {
+
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid white;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    overflow:hidden;
+    z-index:1;
+}
+
+.card__whiteBgr {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+   
+}
+
+.card__name {
+    align-self: end;
+    > h3 {
+        padding-top: 2rem;
+    }
+}
+
+.card__values {
+    
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-top: 0.5px solid $darkGray;
+}
